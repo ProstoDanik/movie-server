@@ -1,0 +1,74 @@
+[
+  {
+    "model": "main.genre",
+    "pk": 1,
+    "fields": {
+      "name": "Драма",
+      "description": ""
+    }
+  },
+  {
+    "model": "main.genre",
+    "pk": 2,
+    "fields": {
+      "name": "Боевик",
+      "description": ""
+    }
+  },
+  {
+    "model": "main.genre",
+    "pk": 3,
+    "fields": {
+      "name": "Военный",
+      "description": ""
+    }
+  },
+  {
+    "model": "main.genre",
+    "pk": 4,
+    "fields": {
+      "name": "Детектив",
+      "description": ""
+    }
+  },
+  {
+    "model": "main.genre",
+    "pk": 5,
+    "fields": {
+      "name": "Фантастика",
+      "description": ""
+    }
+  },
+  {
+    "model": "main.genre",
+    "pk": 6,
+    "fields": {
+      "name": "Криминал",
+      "description": ""
+    }
+  },
+  {
+    "model": "main.genre",
+    "pk": 7,
+    "fields": {
+      "name": "Комедия",
+      "description": ""
+    }
+  },
+  {
+    "model": "main.genre",
+    "pk": 8,
+    "fields": {
+      "name": "Триллер",
+      "description": ""
+    }
+  },
+  {
+    "model": "main.genre",
+    "pk": 9,
+    "fields": {
+      "name": "Биография",
+      "description": ""
+    }
+  }
+]

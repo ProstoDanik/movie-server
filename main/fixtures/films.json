@@ -1,0 +1,122 @@
+[
+  {
+    "model": "main.filmdescription",
+    "pk": 1,
+    "fields": {
+      "name": "Веном",
+      "genres": "Боевик",
+      "time": "112 минут",
+      "image": "films_images/venom.jpg",
+      "link": "1",
+      "category": 2
+    }
+  },
+  {
+    "model": "main.filmdescription",
+    "pk": 2,
+    "fields": {
+      "name": "Останься",
+      "genres": "Триллер",
+      "time": "95 минут",
+      "image": "films_images/stay.jpg",
+      "link": "2",
+      "category": 8
+    }
+  },
+  {
+    "model": "main.filmdescription",
+    "pk": 3,
+    "fields": {
+      "name": "Во все тяжкие",
+      "genres": "Криминал",
+      "time": "2820 минут",
+      "image": "films_images/breaking.jpg",
+      "link": "3",
+      "category": 6
+    }
+  },
+  {
+    "model": "main.filmdescription",
+    "pk": 4,
+    "fields": {
+      "name": "Брат 2",
+      "genres": "Боевик",
+      "time": "127 минут",
+      "image": "films_images/Brat2.jpg",
+      "link": "4",
+      "category": 2
+    }
+  },
+  {
+    "model": "main.filmdescription",
+    "pk": 5,
+    "fields": {
+      "name": "Флэш",
+      "genres": "Фантастика",
+      "time": "47 минут",
+      "image": "films_images/flash.jpg",
+      "link": "5",
+      "category": 5
+    }
+  },
+  {
+    "model": "main.filmdescription",
+    "pk": 6,
+    "fields": {
+      "name": "Американский психопат",
+      "genres": "Криминал",
+      "time": "102 минут",
+      "image": "films_images/psycho.png",
+      "link": "6",
+      "category": 6
+    }
+  },
+  {
+    "model": "main.filmdescription",
+    "pk": 7,
+    "fields": {
+      "name": "Социальная сеть",
+      "genres": "Биография",
+      "time": "120 минут",
+      "image": "films_images/socialnet.jpg",
+      "link": "7",
+      "category": 9
+    }
+  },
+  {
+    "model": "main.filmdescription",
+    "pk": 8,
+    "fields": {
+      "name": "Мстители",
+      "genres": "Фантастика",
+      "time": "137 минут",
+      "image": "films_images/avengers.jpg",
+      "link": "8",
+      "category": 5
+    }
+  },
+  {
+    "model": "main.filmdescription",
+    "pk": 9,
+    "fields": {
+      "name": "На Западном фронте без перемен",
+      "genres": "Военный",
+      "time": "148 минут",
+      "image": "films_images/war.png",
+      "link": "9",
+      "category": 3
+    }
+  },
+  {
+    "model": "main.filmdescription",
+    "pk": 10,
+    "fields": {
+      "name": "Человек-паук: Вдали от дома",
+      "genres": "Фантастика",
+      "time": "129 минут",
+      "image": "films_images/spider.png",
+      "link": "10",
+      "category": 5
+    }
+  }
+]

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фильм {{ films.name }}</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/static/vendor/css/descr.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="wrapper">
+
+            <div class="wrapper-col-1">
+                <img src="{{ films.image.url }}" alt="Веном (2018)">
+            </div>
+            <!-- /.wrapper-col-1 -->
+
+            <div class="wrapper-col-2">
+                <h1 class="title">{{ films.name }}</h1>
+                <h6 class="subtitle">{{ films.eng_name }}</h6>
+                <p class="description">{{ films.description }}</p>
+
+                <div class="mb-40">
+                    <a href="{% url 'watch:PsychoVideo' %}" class="btn">Смотреть</a>
+                </div>
+                <!-- /.mb-40 -->
+
+                <ul class="params mb-40">
+                    <li><span class="text-muted">Аудиодорожки</span> Русский, Русский 5.1, Английский, Английский 5.1</li>
+                    <li><span class="text-muted">Субтитры</span> Нет</li>
+                    <li><span class="text-muted">Качество видео</span> <span><span class="tag">Full HD</span></span></li>
+                </ul>
+
+                <h2>О фильме</h2>
+
+                <ul class="params">
+                    <li><span class="text-muted">Год производства</span> {{ films.year }}</li>
+                    <li><span class="text-muted">Страна</span> {{ films.country }}</li>
+                    <li><span class="text-muted">Жанр</span> <span><a href="#">{{ films.genre }}</a></span></li>
+                    <li><span class="text-muted">Слоган</span> <span class="text-muted">
+{{ films.slogan }}</span></li>
+                    <li><span class="text-muted">Режиссер</span>
+{{ films.director }}</li>
+                    <li><span class="text-muted">Время</span> <time class="text-muted">
+{{ films.time }}</time></li>
+                </ul>
+            </div>
+            <!-- /.wrapper-col-2 -->
+
+            <div class="wrapper-col-3">
+                <span class="rathing-main">{{ films.rating }}</span>
+                <span class="rathing-counts">{{ films.num_rating }}</span>
+                <a href="#" class="rathing-details">{{ films.reviews }}</a>
+            </div>
+            <!-- /.wrapper-col-3 -->
+
+        </div>
+        <!-- /.wrapper -->
+
+    </div>
+    <!-- /.container -->
+
+</body>
+</html>
