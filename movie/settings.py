@@ -40,7 +40,32 @@ INSTALLED_APPS = [
     'main',
     'watch',
     'users',
+
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.google',
 ]
+
+#
+SITE_ID = 1
+SOCIALACCOUNT_LOGIN_ON_GET = True
+AUTHENTICATION_BACKENDS = [
+    'allauth.account.auth_backends.AuthenticationBackend'
+]
+SOCIALACCOUNT_PROVIDERS = {
+    'google': {
+        'SCOPE': [
+            'profile',
+            'email',
+        ],
+        'AUTH_PARAMS': {
+            'access-type': 'online',
+        }
+    }
+}
+#
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

@@ -28,6 +28,8 @@ urlpatterns = [
     path('catalog/genre/<int:genre_id>/', index, name='genre'),
     path('catalog/reviews/', review, name='review'),
 
+    path("", include('allauth.urls')),
+
     path('favorites/add/<int:film_id>/', favorites_add, name='favorites_add'),
     path('favorites/remove/<int:favorite_id>/', favorite_remove, name='favorite_remove'),
 
