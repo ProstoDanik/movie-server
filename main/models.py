@@ -29,3 +29,19 @@ class Favorites(models.Model):
     def __str__(self):
         return f'Избранные для: {self.user.username} | Фильм: {self.film.name}'
 
+
+class Rating(models.Model):
+    rating = models.CharField(max_length=2)
+
+    def __str__(self):
+        return self.rating
+
+
+class Reviews(models.Model):
+    user = models.ForeignKey(to=User, on_delete=models.CASCADE)
+    film = models.ForeignKey(to=FilmDescription, on_delete=models.CASCADE)
+    rating_number = models.ForeignKey(to=Rating, on_delete=models.CASCADE)
+    text_reviews = models.TextField(max_length=2000)
+
+    def __str__(self):
+        return f'Отзыв от: {self.user.username} | Фильм: {self.film.name}'

@@ -1,6 +1,8 @@
-from django.shortcuts import render, HttpResponseRedirect
-from main.models import Genre, FilmDescription, Favorites
+from django.shortcuts import render, HttpResponseRedirect, reverse
+from main.models import Genre, FilmDescription, Favorites, Rating
 from users.models import User
+from django.contrib.auth.decorators import login_required
+from main.forms import ReviewForm
 
 
 # Create your views here.
@@ -29,9 +31,17 @@ def index(request, genre_id=None):
 
 
 def review(request):
-    return render(request, 'main/reviews.html')
+    context = {
+        'films': FilmDescription.objects.all(),
+        'ratings': Rating.objects.all(),
 
 
+    }
+    return render(request, 'main/reviews.html', context)
+
+
+
+@login_required
 def favorites_add(request, film_id):
     film = FilmDescription.objects.get(id=film_id)
     favorites = Favorites.objects.filter(user=request.user, film=film)

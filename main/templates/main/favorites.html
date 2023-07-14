@@ -6,8 +6,11 @@
         {% for favorite in  favorites %}
         <div class="card mb-3">
                 <div class="card-body">
-                    <a style="color:black" href="/films/{{favorite.film.link}}"> <h5 class="card-title">{{ favorite.film.name }}</h5></a>
+                    <a style="color:black; " href="/films/{{favorite.film.link}}"> <h5 class="card-title">{{ favorite.film.name }}</h5></a>
+
+                    <img src="{{ favorite.film.image.url }}"  width="100px" alt="">
                 </div>
+         
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item bg-light">
                          <div class="col-lg-4"><a href="{% url 'favorite_remove' favorite.id %}">Удалить</a></div>
