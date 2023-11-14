@@ -8,7 +8,7 @@
     <img src="https://img.shields.io/badge/Telegram-blue?style=for-the-badge&logo=telegram&logoColor=white" alt="LinkedIn Badge"/>
   </a>
 </div>
-<h1>
-  Киносайт: Kino24
+<h1 align="center">
+  Киносайт: <b>Kino24</b>
 
 </h1>
