@@ -4,7 +4,7 @@
 </div>
 
 <div id="badges">
-  <a href="https://t.me/byteflow_it">
+  <a style='text-align: center' href="https://t.me/byteflow_it">
     <img src="https://img.shields.io/badge/Telegram-blue?style=for-the-badge&logo=telegram&logoColor=white" alt="LinkedIn Badge"/>
   </a>
 </div>
