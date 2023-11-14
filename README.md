@@ -9,6 +9,6 @@
   </a>
 </div>
 <h1>
-  Привет, хочу представить свой киносайт: Kino24
-  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/>
+  Киносайт: Kino24
+
 </h1>
