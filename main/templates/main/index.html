@@ -107,7 +107,7 @@
             <p class="accordion__body">
               {% for genre in genres %}
 
-              <a style="color: white; margin: 7px;  " href="{% url 'genre' genre.id %}">{{ genre.name }}</a>
+              <a style="color: white; margin: 7px;  text-decoration:underline" href="{% url 'genre' genre.id %}">{{ genre.name }}</a>
 
               {% endfor %}
             </p>
