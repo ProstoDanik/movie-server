@@ -132,3 +132,98 @@ def boys(request):
 
 def boysvideo(request):
     return render(request, 'watch/BoysVideo.html')
+
+
+def doctor(request):
+    context = {
+        'films': DetailFilm.objects.get(id=13),
+    }
+    return render(request, 'watch/Doctor.html', context)
+
+
+def doctorvideo(request):
+    return render(request, 'watch/DoctorVideo.html')
+
+
+
+def all(request):
+    context = {
+        'films': DetailFilm.objects.get(id=14),
+    }
+    return render(request, 'watch/All.html', context)
+
+
+def allvideo(request):
+    return render(request, 'watch/AllVideo.html')
+
+
+
+
+def bullet(request):
+    context = {
+        'films': DetailFilm.objects.get(id=15),
+    }
+    return render(request, 'watch/Bullet.html', context)
+
+
+def bulletvideo(request):
+    return render(request, 'watch/BulletVideo.html')
+
+
+
+def island(request):
+    context = {
+        'films': DetailFilm.objects.get(id=16),
+    }
+    return render(request, 'watch/Island.html', context)
+
+
+def islandvideo(request):
+    return render(request, 'watch/IslandVideo.html')
+
+
+
+
+def mem(request):
+    context = {
+        'films': DetailFilm.objects.get(id=17),
+    }
+    return render(request, 'watch/Mem.html', context)
+
+
+def memvideo(request):
+    return render(request, 'watch/MemVideo.html')
+
+
+def lars(request):
+    context = {
+        'films': DetailFilm.objects.get(id=18),
+    }
+    return render(request, 'watch/Lars.html', context)
+
+
+def larsvideo(request):
+    return render(request, 'watch/LarsVideo.html')
+
+
+
+def oppen(request):
+    context = {
+        'films': DetailFilm.objects.get(id=19),
+    }
+    return render(request, 'watch/Oppen.html', context)
+
+
+def oppenvideo(request):
+    return render(request, 'watch/OppenVideo.html')
+
+
+def pacan(request):
+    context = {
+        'films': DetailFilm.objects.get(id=20),
+    }
+    return render(request, 'watch/Pacan.html', context)
+
+
+def pacanvideo(request):
+    return render(request, 'watch/PacanVideo.html')
